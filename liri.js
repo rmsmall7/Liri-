@@ -1,4 +1,4 @@
-
+// require("dotenv").config();
 var keys = require('./key.js');
 var fs = require('fs');
 var request = require('request');
@@ -9,8 +9,8 @@ var axios = require("axios");
 
 
 var input = process.argv;
-var command = process.argv[2];
-var userdata = process.argv[3];
+var command = input[2];
+var userdata = input[3];
 
 
 //Spotify-this-song fucntion listed below:
@@ -23,10 +23,11 @@ function spotifyTrack(info){
       console.log("Error: " +error);
       return;
     }
-    console.log(data);
+    // console.log(data);
     var summary = data.tracks.items;
+    // console.log(summary[0])
 
-    console.log("Artist(s): " +summary[0].artist[0].name);
+    console.log("Artist(s): " +summary[0].artists[0].name);
     console.log("Song Name: " +summary[0].name);
     console.log("Preview Link: " + summary[0].preview_url);
     console.log("Album: " + summary[0]. album.name);
@@ -38,7 +39,7 @@ function omdbMovie(info){
   var queryUrl = "http://www.omdbapi.com/?t=" + info + "&y=&plot=short&apikey=trilogy";
   
 
-  request(queryUrl, function(eror, response, body){
+  request(queryUrl, function(error, response, body){
     if(info){
       info="Mr Noboy";
     }
@@ -46,7 +47,7 @@ function omdbMovie(info){
       console.log("Title: " + JSON.parse(body).Title);
       console.log("Release Year: " + JSON.parse(body).Year);
       console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
-      console.log("Rotten Tomatoes Rating: " + JSON.parse(body).rating[1].Value);
+      console.log("Rotten Tomatoes Rating: " + JSON.parse(body).Ratings[0].Value);
       console.log("Country: " + JSON.parse(body).Country);
       console.log("Language: " + JSON.parse(body).Language);
       console.log("Plot: " + JSON.parse(body).Plot);
@@ -57,7 +58,9 @@ function omdbMovie(info){
 
 //concert-this function below:
 function concert(info) {
-  var queryUrl = 'https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp';
+  var queryUrl = 'https://rest.bandsintown.com/artists/' + info + '/events?app_id=codingbootcamp';
+
+  // console.log(userdata);
 
   request(queryUrl, function(error, response){
     if(!info){
@@ -67,7 +70,7 @@ function concert(info) {
       var result = JSON.parse(response.body)[0];
       console.log("City: " + result.venue.city);
       console.log("Venue Name: " + result.venue.name);
-      console.log("Event Date: " + moment(result.datetime).format("mm/dd/yyyy"));
+      console.log("Event Date: " + result.datetime);
     }
   });
 }
