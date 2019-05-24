@@ -24,8 +24,8 @@ To use Liri-Bot:
         * Name of the venue
         * Venue location
         * Date of the Event (use moment to format this as "MM/DD/YYYY")
-    ![songBlank](https://github.com/rmsmall7/Liri-Bot/blob/master/video/songBlank.gif)
-
+    ![songBlank]
+   
 
 * node liri.js spotify-this-song '<song name here>'
   * This will show the following information about the song in your terminal/bash window.
@@ -34,6 +34,8 @@ To use Liri-Bot:
           * The song's name
           * A preview link of the song from Spotify
           * The album that the song is from
+   **Example: In this example the song name was left blank.  App displayed the default song "The Sign"
+    (https://github.com/rmsmall7/Liri-Bot/blob/master/video/songBlank.gif)
   
   * node liri.js movie-this '<movie name here>'
     * This will output the following information to your terminal/bash window:
