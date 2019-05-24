@@ -24,7 +24,7 @@ To use Liri-Bot:
         * Name of the venue
         * Venue location
         * Date of the Event (use moment to format this as "MM/DD/YYYY")
-    ![](videos/concert-this3(1).mp4)
+    ![concert-this3(1)](https://github.com/rmsmall7/Liri-Bot/blob/master/video/concert-this3%20(1).mp4)
 
 
 * node liri.js spotify-this-song '<song name here>'
