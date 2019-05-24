@@ -24,8 +24,9 @@ To use Liri-Bot:
       * Name of the venue
       * Venue location
       * Date of the Event (use moment to format this as "MM/DD/YYYY")
-    **Example: Artist Pink was seleected for this example
-     ![concertThis](https://github.com/rmsmall7/Liri-Bot/blob/master/video/songBlank.gif)   
+      **  Example: Artist Pink was seleected for this example
+
+     ![concertThis](https://github.com/rmsmall7/Liri-Bot/blob/master/video/concertThis.gif)   
 
 * node liri.js spotify-this-song '<song name here>'
   * This will show the following information about the song in your terminal/bash window.
