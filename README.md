@@ -25,6 +25,7 @@ To use Liri-Bot:
         * Venue location
         * Date of the Event (use moment to format this as "MM/DD/YYYY")
 
+
 * node liri.js spotify-this-song '<song name here>'
   * This will show the following information about the song in your terminal/bash window.
   * If there is not song entered then the application will return "The Sign" by Ace of Base
