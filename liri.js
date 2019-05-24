@@ -102,7 +102,7 @@ switch (command) {
       if(userdata){
         spotifyTrack(userdata);
       }else {
-        spotifyTrack();
+        spotifyTrack('The Sign Ace of Base');
       };
       break;
     
