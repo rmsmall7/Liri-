@@ -21,9 +21,9 @@ NPM Packages:
 To use Liri-Bot:  
 * node liri.js concert-this <artist/band name here>
   * This will search the Bands in Town Artist Events API for an artist and render the following information about each event to the terminal:
-      * Name of the venue
-      * Venue location
-      * Date of the Event (use moment to format this as "MM/DD/YYYY")
+    * Name of the venue
+    * Venue location
+    * Date of the Event (use moment to format this as "MM/DD/YYYY")
       
       **  Example: Artist Pink was seleected for this example
 
@@ -32,10 +32,10 @@ To use Liri-Bot:
 * node liri.js spotify-this-song '<song name here>'
   * This will show the following information about the song in your terminal/bash window.
   * If there is not song entered then the application will return "The Sign" by Ace of Base
-      * Artist(s)
-      * The song's name
-      * A preview link of the song from Spotify
-      * The album that the song is 
+    * Artist(s)
+    * The song's name
+    * A preview link of the song from Spotify
+    * The album that the song is 
  
    **Example: In this example the song name was left blank.  App displayed the default song "The Sign"
  
@@ -45,25 +45,25 @@ To use Liri-Bot:
  
      ![song](https://github.com/rmsmall7/Liri-Bot/blob/master/video/song.gif)
   
-  * node liri.js movie-this '<movie name here>'
-    * This will output the following information to your terminal/bash window:
-      * Title of the movie.
-      * Year the movie came out.
-      * IMDB Rating of the movie.
-      * Rotten Tomatoes Rating of the movie.
-      * Country where the movie was produced.
-      * Language of the movie.
-      * Plot of the movie.
-      * Actors in the movie.
+* node liri.js movie-this '<movie name here>'
+  * This will output the following information to your terminal/bash window:
+    * Title of the movie.
+    * Year the movie came out.
+    * IMDB Rating of the movie.
+    * Rotten Tomatoes Rating of the movie.
+    * Country where the movie was produced.
+    * Language of the movie.
+    * Plot of the movie.
+    * Actors in the movie.
 
     **Example: 
  
      ![movie](https://github.com/rmsmall7/Liri-Bot/blob/master/video/movie.gif)
   
    * node liri.js do-what-it-says
-      * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
-      * It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
-      * Edit the text in random.txt to test out the feature for movie-this and concert-this.
+    * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+    * It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
+    * Edit the text in random.txt to test out the feature for movie-this and concert-this.
 
     **Example:
  
