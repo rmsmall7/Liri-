@@ -35,8 +35,10 @@ To use Liri-Bot:
       * Artist(s)
       * The song's name
       * A preview link of the song from Spotify
-      * The album that the song is from
+      * The album that the song is 
+ 
    **Example: In this example the song name was left blank.  App displayed the default song "The Sign"
+ 
      ![songBlank](https://github.com/rmsmall7/Liri-Bot/blob/master/video/songBlank.gif)
   
   * node liri.js movie-this '<movie name here>'
