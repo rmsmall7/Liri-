@@ -40,6 +40,10 @@ To use Liri-Bot:
    **Example: In this example the song name was left blank.  App displayed the default song "The Sign"
  
      ![songBlank](https://github.com/rmsmall7/Liri-Bot/blob/master/video/songBlank.gif)
+
+    **Example: In this example the song name is "Old Town Road"
+ 
+     ![song](https://github.com/rmsmall7/Liri-Bot/blob/master/video/song.gif)
   
   * node liri.js movie-this '<movie name here>'
     * This will output the following information to your terminal/bash window:
@@ -51,11 +55,19 @@ To use Liri-Bot:
       * Language of the movie.
       * Plot of the movie.
       * Actors in the movie.
+
+    **Example: 
+ 
+     ![movie](https://github.com/rmsmall7/Liri-Bot/blob/master/video/movie.gif)
   
    * node liri.js do-what-it-says
       * Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
       * It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
       * Edit the text in random.txt to test out the feature for movie-this and concert-this.
+
+    **Example:
+ 
+     ![doWhat](https://github.com/rmsmall7/Liri-Bot/blob/master/video/doWhatItSays.gif)
 
   
   
